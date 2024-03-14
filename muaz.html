@@ -1,84 +1,159 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <title>Welcome Bug Hunters</title>
     <!-- Add Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Welcome Bug Hunters</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <!-- Custom CSS -->
     <style>
+        /* Your existing styles */
         body {
             font-family: 'georgia', georgia, 'georgia', georgia;
-            background-color: #f3f3f8;
+            background-color: #e8e8ff;
+            padding-top: 70px; /* Add padding-top to adjust for fixed navbar */
+            margin: 0; /* Remove default margin */
         }
-
         .navbar {
             box-shadow: 0 2px 4px rgba(8, 8, 8, 0.1);
         }
-
         .navbar-brand img {
-            height: 40px;
+            height: 60px;
             width: auto;
         }
-
         .navbar-nav {
-            padding: 2% ;
+            padding: 1%;
             color: #f7f9fc;
             transition: color 0.3s ease;
         }
-
         .navbar-nav .nav-link:hover {
             color: #030303;
         }
-
         .jumbotron {
             background-image: url('https://image.cnbcfm.com/api/v1/image/106114015-1567698570831gettyimages-817486028.jpeg?v=1683468509&w=1920&h=1080');
-            background-size: contain;
+            background-size: cover; /* Change to cover for better background image scaling */
             background-position: center;
             color: #f8df00;
             text-align: center;
             padding: 150px 0;
             margin-bottom: 0;
         }
-
         .blog-post {
             margin-bottom: 30px;
         }
-
         .footer {
             background-color: #343a40;
-            color: #fff;
+            color: #000000;
             padding: 20px 0;
             text-align: center;
         }
-
         .footer a {
+            color: #ffffff;
+        }
+        /* Adjustments for responsiveness */
+        @media (max-width: 768px) {
+            .jumbotron {
+                padding: 100px 0; /* Adjust padding for smaller screens */
+            }
+        }
+        /* New CSS features */
+        .btn-primary:hover {
+            background-color: #b3bbc4; /* Change hover background color for primary buttons */
+        }
+        .social-icons li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .social-icons li a {
             color: #fff;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+        .social-icons li a:hover {
+            color: #007bff; /* Change hover color for social icons */
+        }
+        /* Additional CSS for new sections */
+        .section {
+            padding: 50px 0; /* Adjust padding between sections */
+            margin-bottom: 0; /* Remove additional spacing between sections */
+        }
+        .section-heading {
+            text-align: center;
+            margin-bottom: 30px; /* Reduce margin between section heading and content */
+        }
+        .section-content {
+            text-align: center;
+        }
+        .image-container {
+            background-color: #4d4949; /* Choose your desired background color */
+            padding: 20px; /* Add padding to create space between the image and the background */
+            border-radius: 10px; /* Optional: Add rounded corners to the container */
+        }
+        .section-content.text-white {
+            color: #fff; /* Set text color to white */
+        }
+        /* Custom CSS for Contact Form */
+        .custom-input,
+        .custom-textarea {
+            border-radius: 3px;
+            border: 1px solid #6b6666;
+            padding: 0.75rem;
+            transition: border-color 0.2s ease-in-out, box-shadow 0.20s ease-in-out;
+        }
+
+        .custom-input:focus,
+        .custom-textarea:focus {
+            border-color: #b4a8a8;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(190, 184, 184, 0.25);
+        }
+
+        .custom-btn {
+            border-radius: 5px;
+            background-color: #0d0d0e;
+            border: none;
+        }
+
+        .custom-btn:hover {
+            background-color: #eb0b0b;
+        }
+        /* Custom CSS */
+        .contact-form-wrapper {
+            background-color: #f33535; /* Background color for the contact form wrapper */
+            padding: 5px; /* Padding around the contact form */
+            border-radius: 10px; /* Rounded corners for the contact form wrapper */
+        }
+
+        .contact-form-card {
+            border: none; /* Remove border from the card */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow to the card */
+        }
+
+        .custom-input,
+        .custom-textarea {
+            border-radius: 5px; /* Rounded corners for input fields and textarea */
+        }
+
+        .custom-btn {
+            border-radius: 5px; /* Rounded corners for the submit button */
+            background-color: #d82525; /* Button background color */
+            border-color: #080808; /* Button border color */
+        }
+
+        .custom-btn:hover {
+            background-color: #070707; /* Button background color on hover */
+            border-color: #0056b3; /* Button border color on hover */
+            color: #faf9f9; /* Text color on hover */
         }
     </style>
 </head>
 <body>
-
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> <!-- Add fixed-top class for fixed navbar -->
     <div class="container">
         <!-- Navbar brand -->
         <a class="navbar-brand" href="#">
@@ -108,71 +183,123 @@
         </div>
     </div>
 </nav>
-
 <!-- Header / Jumbotron -->
 <div class="jumbotron">
     <h1 class="display-4">Welcome Bug Hunters</h1>
     <p class="lead">Learn about the latest trends in cybersecurity and bug bounty hunting services.</p>
-    
 </div>
-
-<!-- Blog Posts Section -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="blog-post">
-                <h2>Reflected XSS</h2>
-                <p class="text-muted">Posted on January 1, 2024 by Muaz</p>
-                <p>Reflected Cross-Site Scripting (XSS) occurs when an attacker injects malicious scripts into a web application's input fields.</p>
-                <a href="#" class="btn btn-primary">Read More</a>
+<!-- Vulnerability Assessment Services Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-heading">Vulnerability Assessment Services</h2>
+        <p class="section-content">We offer vulnerability assessment services including Reflected XSS, stored XSS, and DOM XSS assessments using Burp Suite Professional.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/N-JHYRcaDj4/maxresdefault.jpg" class="card-img-top" alt="XSS Assessment">
+                    <div class="card-body">
+                        <p class="card-text text-center">Reflected XSS Assessment</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="blog-post">
-                <h2>DOM XSS</h2>
-                <p class="text-muted">Posted on January 1, 2024 by Muaz</p>
-                <p>DOM-Based Cross-Site Scripting (XSS) is a web application vulnerability where attackers inject malicious scripts into a webpage's Document Object Model (DOM).</p>
-                <a href="#" class="btn btn-primary">Read More</a>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/GiqR9IXr_bU/maxresdefault.jpg" class="card-img-top" alt="Stored XSS Assessment">
+                    <div class="card-body">
+                        <p class="card-text text-center">Stored XSS Assessment</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="blog-post">
-                <h2>Stored XSS</h2>
-                <p class="text-muted">Posted on January 1, 2024 by Muaz</p>
-                <p>Stored Cross-Site Scripting (XSS) involves attackers injecting malicious scripts into a web application's database.</p>
-                <a href="#" class="btn btn-primary">Read More</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Contact Form Section -->
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title text-center">Contact Us</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                    </form>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://cdn.invicti.com/app/uploads/2022/06/28122524/dom-based-cross-site-scripting-vulnerability-768x403.jpg" class="card-img-top" alt="DOM XSS Assessment">
+                    <div class="card-body">
+                        <p class="card-text text-center">DOM XSS Assessment</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+<!-- Features of Burp Suite Professional Section -->
+<!-- Features of Burp Suite Professional Section -->
+<section class="section">
+    <div class="image-container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 text-center">
+                <h2 class="section-content text-white">Features of Burp Suite Professional</h2>
+                <p class="section-content text-white">Burp Suite Professional provides comprehensive vulnerability assessment and security testing capabilities.</p>
+                <img src="https://miro.medium.com/v2/resize:fit:1200/1*Ch-mZ_z7AIl6OGw7gMTiCg.png" class="img-fluid mt-sm-n1" alt="Burp Suite Professional Image" style="max-width: 400px;">
+            </div>
+        </div>
+    </div>
+</section>
+    
+</section>
+<!-- Testimonials Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-heading">Testimonials</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text">"I'm impressed by the thoroughness and professionalism of the vulnerability assessment services provided by Bug Bounty Hunters. Their team helped us identify critical vulnerabilities and provided actionable recommendations to improve our security posture."</p>
+                        <p class="card-text"><strong>John Doe</strong>, CEO of Example Inc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text">"Bug Bounty Hunters exceeded our expectations with their vulnerability assessment services. Their comprehensive approach and timely delivery helped us secure our web applications effectively."</p>
+                        <p class="card-text"><strong>Jane Smith</strong>, CTO of Sample Corporation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p class="card-text">"The vulnerability assessment performed by Bug Bounty Hunters was thorough and insightful. Their detailed report helped us prioritize and address security issues in our systems."</p>
+                        <p class="card-text"><strong>Michael Johnson</strong>, Security Analyst at Test Corp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+<!-- Contact Form Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-heading">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="contact-form-wrapper">
+                    <div class="card contact-form-card">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control custom-input" id="name" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" class="form-control custom-input" id="email" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Your Message</label>
+                                    <textarea class="form-control custom-textarea" id="message" rows="5" placeholder="Enter your message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block custom-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Footer -->
 <footer class="footer">
@@ -195,7 +322,6 @@
         </div>
     </div>
 </footer>
-
 <!-- Bootstrap and JavaScript dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -205,12 +331,4 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shCk5KVYmHT4u6IbbE/iJkho1gy5g5t0TKOVO"
         crossorigin="anonymous"></script>
 </body>
-</html>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
 </html>
