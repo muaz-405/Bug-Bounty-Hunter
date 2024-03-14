@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Colorpop</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <!-- Font Awesome CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <!-- Custom CSS -->
+      <style>
+        body {
+          background-color: #f5adb9; /* Baby pink color */
+        }
+        .nav-link {
+    font-weight: bold;
+}
+        .navbar {
+          background-color: #000000; /* Light pink color */
+        }
+        .navbar-brand {
+          font-family: 'Brush Script MT', 'Brush Script MT'; /* Joining font */
+          font-size: 45px;
+          font-stretch: expanded;
+          color: #fafafa; /* Color of the brand name */
+          font-display: center ;
+        }
+        .jumbotron {
+          background-image: url('https://colourpop.com/cdn/shop/files/Cheek-Week_Med-Banner_Desktop_3.jpg?v=1709931061&width=1500');
+          background-size: cover;
+          color: #030303;
+          text-align: center;
+          padding:  200px 0;
+          margin-bottom: 55px;
+        }
+        .jumbotron {
+          background-image: url('https://colourpop.com/cdn/shop/files/Cheek-Week_Med-Banner_Desktop_3.jpg?v=1709931061&width=1500');
+          background-size: cover;
+          color: #111111;
+          text-align: center;
+          padding:  200px 0;
+          margin-bottom: 0px;
+        }
+        .image-grid img {
+          width: 100%;
+          height: auto;
+          border-radius: 100px;
+          
+        }
+        .image-description {
+          font-size: 16px;
+          color: #000;
+          margin-top: -30px;
+          margin-bottom: 0;
+        }
+        .price-item {
+          font-size: 17px;
+          color: #080808;
+          text-decoration: line-through;
+          text-align: center;
+          margin: 1;
+          margin-top: 1px;
+          margin-bottom: 1;
+         
+          
+        }
+        .image-price {
+          font-size: 18px;
+          font-weight: bold;
+          color: #000000;
+          margin-top: -1px;
+          margin-bottom: -1;
+        }
+        .add-to-cart-bar {
+          margin-top: -1px;
+          margin-top: -2px;
+          margin-bottom: -1;
+
+          
+        }
+        .navbar-nav .nav-item {
+            display: inline-block;
+        }
+        .navbar-nav {
+            width: 100%;
+            text-align: center;
+        }
+   /* Button Styles */
+   .btn-primary {
+            background-color: #ff86b4; /* Red color */
+            border-color: #c46474; /* Red color */
+        }
+        .btn-primary:hover {
+            background-color: #ee0c66; /* Darker red color on hover */
+            border-color: #d489a8; /* Darker red color on hover */
+        }
+        .about-us-box {
+            border-color: #000000; /* Darker red color on hover */
+    background-color: #ff869b; /* White background */
+    border-radius: 60px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.945); /* Shadow effect */
+    
+}
+.star-ratings {
+    height: 1.5em; /* Adjust the height as needed */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+.star-ratings {
+    position: relative;
+    top: -20px; /* Adjust the position as needed */
+}
+.add-to-cart-bar {
+    margin-top: -20px;
+    margin-bottom: 20px; /* Add margin to prevent overlap */
+}
+
+.navbar {
+    background-color: #ff869b !important; /* Dark gray background */
+    color: #f8f4f4 !important; /* White text color */
+}
+.footer-bar {
+    background-color: #000;
+    color: #961b1b;
+    padding: 20px 0;
+}
+
+      </style>
+    </head>
+    <body>
+    
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+      <div class="container">
+        
+        <a class="navbar-brand" href="#">Colorpop<p><p></a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              
+              <a class="nav-link" href="#"><b>NEW</b></a><p>  </p>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><b>BEST SELLERS</b></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><b>VALUE SETS</b></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><b>PALETTES</b></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><b>EYES</b></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><b>LIPS</b></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><b>FACE</b></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><b>COLLABS</b></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><b>SKINCARE</b></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><b>BODY</b></a>
+            </li>
+            
+            <!-- Other nav items -->
+          </ul>
+          <!-- Icons -->
+          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+          <a class="nav-link" href="#"><i class="fas fa-user-cog"></i></a>
+          <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+        </div>
+      </div>
+    </nav>
+     <!-- Header / Jumbotron -->
+    <div class="jumbotron">
+      <h1 class="display-4">
+      <p class="lead">
+    </div>
+ <!-- Alert with colored text, colored background, bold text, custom font style (Georgia), and centered text -->
+<div class="alert text-center" role="alert" style="background-color: #ff869b(335, 81%, 69%); color: #ffffff; font-size: 1.2em; font-family: Georgia, serif;">
+  <strong class="font-weight-bold">Shop 30% OFF blush, bronze & highlighters</strong> 
+</div>
+ 
+</div>
+
+</div>
+
+    
+    <!-- Image Grid -->
+<div class="container">
+  <div class="row">
+      <!-- Repeat this block for each image -->
+      <!-- Image 1 -->
+      <div class="col-md-4">
+          <img src="https://colourpop.com/cdn/shop/products/Colourpop-PPB-Arm-Swatch.jpg?v=1678312396&width=500" alt="Image 1" class="img-fluid rounded-circle">
+          <div class="star-ratings">
+              <!-- Ratings -->
+              
+          </div>
+          <div class="star-ratings">
+            <!-- 3 stars for example -->
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span> <!-- Empty stars for the remaining rating -->
+            <span class="fa fa-star"></span>
+        </div>
+          <p class="image-description">Description for Image</p>
+          
+          <s class="price-item price-item--regular">$12.00</s>
+          <p class="image-price">$19.99</p>
+          <div class="add-to-cart-bar">
+            <button class="btn btn-primary">Add to Cart</button>
+        </div>
+          <!-- Add to Cart button -->
+          
+      </div>
+      <!-- Image 2 -->
+      <div class="col-md-4">
+          <img src="https://colourpop.com/cdn/shop/products/Colourpop-PPB-Arm-Swatch.jpg?v=1678312396&width=500" alt="Image 2" class="img-fluid rounded-circle">
+          <div class="star-ratings">
+              <!-- Ratings -->
+          </div>
+          <div class="star-ratings">
+            <!-- 3 stars for example -->
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span> <!-- Empty stars for the remaining rating -->
+            <span class="fa fa-star"></span>
+        </div>
+          <p class="image-description">Description for Image</p>
+          <s class="price-item price-item--regular">$12.00</s>
+          <p class="image-price">$19.99</p>
+          <!-- Add to Cart button -->
+          <div class="add-to-cart-bar">
+              <button class="btn btn-primary">Add to Cart</button>
+          </div>
+      </div>
+      <!-- Image 3 -->
+      <div class="col-md-4">
+          <img src="https://colourpop.com/cdn/shop/products/Colourpop-PPB-Arm-Swatch.jpg?v=1678312396&width=500" alt="Image 3" class="img-fluid rounded-circle">
+          <div class="star-ratings">
+              <!-- Ratings -->
+          </div>
+          <div class="star-ratings">
+            <!-- 3 stars for example -->
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span> <!-- Empty stars for the remaining rating -->
+            <span class="fa fa-star"></span>
+        </div>
+          <p class="image-description">Description for Image</p>
+          <s class="price-item price-item--regular">$12.00</s>
+          <p class="image-price">$19.99</p>
+          <!-- Add to Cart button -->
+          <div class="add-to-cart-bar">
+              <button class="btn btn-primary">Add to Cart</button>
+          </div>
+      </div>
+      <!-- Repeat this block for a total of 15 times -->
+      <!-- Add remaining images here -->
+      <!-- Image 4 -->
+      <div class="col-md-4">
+          <img src="https://colourpop.com/cdn/shop/products/Colourpop-PPB-Arm-Swatch.jpg?v=1678312396&width=500" alt="Image 4" class="img-fluid rounded-circle">
+          <div class="star-ratings">
+              <!-- Ratings -->
+          </div>
+          <div class="star-ratings">
+            <!-- 3 stars for example -->
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span> <!-- Empty stars for the remaining rating -->
+            <span class="fa fa-star"></span>
+        </div>
+          <p class="image-description">Description for Image</p>
+          <s class="price-item price-item--regular">$12.00</s>
+          <p class="image-price">$19.99</p>
+          <!-- Add to Cart button -->
+          <div class="add-to-cart-bar">
+              <button class="btn btn-primary">Add to Cart</button>
+          </div>
+      </div>
+      <!-- Image 5 -->
+      <div class="col-md-4">
+        <img src="https://colourpop.com/cdn/shop/products/Colourpop-PPB-Arm-Swatch.jpg?v=1678312396&width=500" alt="Image 2" class="img-fluid rounded-circle">
+        <div class="star-ratings">
+            <!-- Ratings -->
+        </div>
+        <div class="star-ratings">
+          <!-- 3 stars for example -->
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star-o"></span> <!-- Empty stars for the remaining rating -->
+          <span class="fa fa-star-o"></span>
+      </div>
+        <p class="image-description">Description for Image</p>
+        <s class="price-item price-item--regular">$12.00</s>
+        <p class="image-price">$19.99</p>
+        <!-- Add to Cart button -->
+        <div class="add-to-cart-bar">
+            <button class="btn btn-primary">Add to Cart</button>
+        </div>
+    </div>
+    <!-- Image 2 -->
+    <div class="col-md-4">
+      <img src="https://colourpop.com/cdn/shop/products/Colourpop-PPB-Arm-Swatch.jpg?v=1678312396&width=500" alt="Image 2" class="img-fluid rounded-circle">
+      <div class="star-ratings">
+          <!-- Ratings -->
+      </div>
+      <div class="star-ratings">
+        <!-- 3 stars for example -->
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star-o"></span> <!-- Empty stars for the remaining rating -->
+        <span class="fa fa-star-o"></span>
+    </div>
+      <p class="image-description">Description for Image</p>
+      <s class="price-item price-item--regular">$12.00</s>
+      <p class="image-price">$19.99</p>
+      <!-- Add to Cart button -->
+      <div class="add-to-cart-bar">
+          <button class="btn btn-primary">Add to Cart</button>
+      </div>
+  </div>
+  
+  <!-- Image 2 -->
+  <div class="col-md-4">
+    <img src="https://colourpop.com/cdn/shop/products/Colourpop-PPB-Arm-Swatch.jpg?v=1678312396&width=500" alt="Image 2" class="img-fluid rounded-circle">
+    <div class="star-ratings">
+        <!-- Ratings -->
+    </div>
+    <div class="star-ratings">
+      <!-- 3 stars for example -->
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star-o"></span> <!-- Empty stars for the remaining rating -->
+      <span class="fa fa-star-o"></span>
+  </div>
+    <p class="image-description">Description for Image</p>
+    <s class="price-item price-item--regular">$12.00</s>
+    <p class="image-price">$19.99</p>
+    <!-- Add to Cart button -->
+    <div class="add-to-cart-bar">
+        <button class="btn btn-primary">Add to Cart</button>
+    </div>
+    
+</div>
+
+<!-- Image 2 -->
+<div class="col-md-4">
+  <img src="https://colourpop.com/cdn/shop/products/Colourpop-PPB-Arm-Swatch.jpg?v=1678312396&width=500" alt="Image 2" class="img-fluid rounded-circle">
+  <div class="star-ratings">
+      <!-- Ratings -->
+  </div>
+  <div class="star-ratings">
+    <!-- 3 stars for example -->
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star-o"></span> <!-- Empty stars for the remaining rating -->
+    <span class="fa fa-star-o"></span>
+</div>
+  <p class="image-description">Description for Image</p>
+  <s class="price-item price-item--regular">$12.00</s>
+  <p class="image-price">$19.99</p>
+  <!-- Add to Cart button -->
+  <div class="add-to-cart-bar">
+      <button class="btn btn-primary">Add to Cart</button>
+  </div>
+</div>
+<!-- Image 2 -->
+<div class="col-md-4">
+  <img src="https://colourpop.com/cdn/shop/products/Colourpop-PPB-Arm-Swatch.jpg?v=1678312396&width=500" alt="Image 2" class="img-fluid rounded-circle">
+  <div class="star-ratings">
+      <!-- Ratings -->
+  </div>
+  <div class="star-ratings">
+    <!-- 3 stars for example -->
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star-o"></span> <!-- Empty stars for the remaining rating -->
+    <span class="fa fa-star-o"></span>
+</div>
+  <p class="image-description">Description for Image</p>
+  <s class="price-item price-item--regular">$12.00</s>
+  <p class="image-price">$19.99</p>
+  <!-- Add to Cart button -->
+  <div class="add-to-cart-bar">
+      <button class="btn btn-primary">Add to Cart</button>
+  </div>
+</div>
+<!-- Image 2 -->
+<div class="col-md-4">
+  <img src="https://colourpop.com/cdn/shop/products/Colourpop-PPB-Arm-Swatch.jpg?v=1678312396&width=500" alt="Image 2" class="img-fluid rounded-circle">
+  <div class="star-ratings">
+      <!-- Ratings -->
+  </div>
+  <div class="star-ratings">
+    <!-- 3 stars for example -->
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star-o"></span> <!-- Empty stars for the remaining rating -->
+    <span class="fa fa-star-o"></span>
+</div>
+  <p class="image-description">Description for Image</p>
+  <s class="price-item price-item--regular">$12.00</s>
+  <p class="image-price">$19.99</p>
+  <!-- Add to Cart button -->
+  <div class="add-to-cart-bar">
+      <button class="btn btn-primary">Add to Cart</button>
+  </div>
+</div>
+
+<!-- Image 2 -->
+<div class="col-md-4">
+  <img src="https://colourpop.com/cdn/shop/products/Colourpop-PPB-Arm-Swatch.jpg?v=1678312396&width=500" alt="Image 2" class="img-fluid rounded-circle">
+  <div class="star-ratings">
+      <!-- Ratings -->
+  </div>
+  <div class="star-ratings">
+    <!-- 3 stars for example -->
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star-o"></span> <!-- Empty stars for the remaining rating -->
+    <span class="fa fa-star-o"></span>
+</div>
+  <p class="image-description">Description for Image</p>
+  <s class="price-item price-item--regular">$12.00</s>
+  <p class="image-price">$19.99</p>
+  <!-- Add to Cart button -->
+  <div class="add-to-cart-bar">
+      <button class="btn btn-primary">Add to Cart</button>
+  </div>
+</div>
+<!-- Image 2 -->
+<div class="col-md-4">
+  <img src="https://colourpop.com/cdn/shop/products/Colourpop-PPB-Arm-Swatch.jpg?v=1678312396&width=500" alt="Image 2" class="img-fluid rounded-circle">
+  <div class="star-ratings">
+      <!-- Ratings -->
+  </div>
+  <div class="star-ratings">
+    <!-- 3 stars for example -->
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star-o"></span> <!-- Empty stars for the remaining rating -->
+    <span class="fa fa-star-o"></span>
+</div>
+  <p class="image-description">Description for Image</p>
+  <s class="price-item price-item--regular">$12.00</s>
+  <p class="image-price">$19.99</p>
+  <!-- Add to Cart button -->
+  <div class="add-to-cart-bar">
+      <button class="btn btn-primary">Add to Cart</button>
+  </div>
+</div>
+  </div>
+</div>
+<!-- Image -->
+<div class="container mt-6">
+  <div class="container-fluid mt-3 px-0"></div>
+  <img src="https://colourpop.com/cdn/shop/files/Rainbow_Med-Banner_Desktop_4.jpg?v=1709252212&width=1500" class="img-fluid" alt="Your Image">
+</div>
+
+
+  
+</div>
+<!-- About Us Carousel -->
+<div id="aboutUsCarousel" class="carousel slide mt-5" data-ride="carousel">
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-md-8">
+                      <div class="about-us-box p-5">
+                          <h2>About Us</h2>
+                          <p>With love from California, it's our mission to redefine luxury beauty by creating amazing products at prices that don't break the bank. We imagine, develop, test and manufacture all under one roof for next level colour + formulas. We pride ourselves on being 100% cruelty-free, wallet-friendly and keeping our community at the center of our world.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+    <!-- Stay in Touch Section -->
+<section class="stay-in-touch text-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-9">
+        <p>        </p>
+        <h3>Hey, let's keep in touch!</h3>
+        <p>Stay in the know when you sign up for our newsletter!</p>
+       
+        <form class="input-group">
+          <input type="email" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-addon2">
+          <div class="input-group-append">
+              <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+          </div>
+      </form>
+      
+            
+          </div>
+          
+        </form>
+        <p class="small">By entering your email address you will receive promotional updates. Consent is not a condition of purchase. <a href="#">View Privacy Policy</a>.</p>
+      </div>
+      <div class="col-md-6">
+       
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          
+          <!--Grid column-->
+          
+            <!-- Email subscription form -->
+            
+             
+              </div>
+            </form>
+          </div>
+          
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <hr style="border-top: 1px solid #ff869b;">
+                <a class="nav-link" href="#"><span style="color: black;">ABOUT</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><span style="color: black;">FAQ</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><span style="color: black;">TERMS</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><span style="color: black;">PRIVACY POLICY</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><span style="color: black;">COOKIE POLICY</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><span style="color: black;">CONTACT US</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><span style="color: black;">PRESS</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><span style="color: black;">ACCESSIBILITY STATEMENT</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><span style="color: black;">DO NOT SELL MY PERSONAL INFORMATION</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><span style="color: black;">CONTEST RULES</span></a>
+            </li>
+        </ul>
+    <hr style="border-top: 1px solid #ff869b;">
+          <!--Grid column-->
+<div class="col-lg-6 col-md-12 mb-4 mb-md-0 d-flex justify-content-center">
+  <div>
+      <h5 class="text-uppercase mb-4">Follow Us</h5>
+      <!-- Social media icons -->
+      <ul class="list-inline">
+          <li class="list-inline-item">
+              <a href="#" class="text-dark">
+                  <i class="fab fa-facebook-f"></i>
+              </a>
+          </li>
+          <li class="list-inline-item">
+              <a href="#" class="text-dark">
+                  <i class="fab fa-twitter"></i>
+              </a>
+          </li>
+          <li class="list-inline-item">
+              <a href="#" class="text-dark">
+                  <i class="fab fa-instagram"></i>
+              </a>
+          </li>
+          <li class="list-inline-item">
+              <a href="#" class="text-dark">
+                  <i class="fab fa-linkedin"></i>
+              </a>
+          </li>
+      </ul>
+  </div>
+</div>
+        
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+    </footer>
+    <!-- Footer -->
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+     
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
